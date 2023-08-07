@@ -16,3 +16,46 @@ $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 //import bootstrap
 @import '../node_modules/bootstrap/scss/bootstrap';
 
+p {
+    color: lightslategrey;
+}
+
+
+a.nav-link:hover {
+
+    border-bottom: #522192;
+}
+
+.primera-col{
+    padding-left: 5rem;
+}
+
+.segunda-col{
+    padding-right: 10rem;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    display: block;
+  }
+  
+  .image-container::after {
+    content: "";
+    background-color: blue;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    z-index: -1;
+    width: 80%; 
+    height: 60%;
+    border-radius: 150px 0 0 150px;
+  }
+
+
+.card-img-top {
+    padding: 30px 90px;
+}
